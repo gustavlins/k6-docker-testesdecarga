@@ -1,0 +1,22 @@
+name: Teste de Performance com k6
+
+on:
+  push:
+    branches: [ "main" ] 
+  pull_request:
+    branches: [ "main" ]
+    
+jobs:
+  k6-load-test:
+    name: Executar k6
+    runs-on: ubuntu-latest
+
+    steps:
+   
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Rodar teste de carga local
+        uses: grafana/k6-action@v0.3.1
+        with:
+          filename: performance/rampVUs.js
