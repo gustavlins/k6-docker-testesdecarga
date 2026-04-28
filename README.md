@@ -2,12 +2,6 @@
 
 Este projeto é um laboratório prático de Engenharia de Performance. O objetivo é demonstrar como orquestrar e executar testes de carga utilizando o **k6** de forma distribuída dentro de um cluster **Kubernetes** local, utilizando o `k6-operator`.
 
-## Tecnologias Utilizadas
-* **Grafana k6:** Ferramenta de teste de carga baseada em JavaScript.
-* **Kubernetes (K8s):** Orquestração dos containers de teste.
-* **Docker Desktop:** Para provisionamento do cluster local.
-* **k6-operator:** Para gerenciar os recursos customizados (CRDs) do k6 no cluster.
-
 ## Pré-requisitos
 Para rodar este projeto na sua máquina, você precisará ter instalado:
 1.  [Docker Desktop](https://www.docker.com/products/docker-desktop/) (com a opção Kubernetes ativada).
